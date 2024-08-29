@@ -7,6 +7,10 @@ CREG12.L75-REF12 is an ocean/sea-ice numerical experiment that relies on the NEM
 * A 75 vertical levels from 1m close to the surface up to 200m below 4000m.
 * The model time step ∆t=270s for most of the experiment. 
 * The period simulated spans the range 1979-2021.
+  * Key points related to the realisation of this simulation:  <br>
+  ** The sea-ice initial state for January 1st 1979 was set with PIOMAS dataset but with the year 2000; this was a mistake. <br>
+  ** From 1979 to 1992, BDYs were forced with a climatology computed over 1993-2021, then from 1993 onward, BDYs were inter-annual. <br>
+  ** From 1979 to the end of 1986, the P* value was 1.5 10^4 N/m2. In trying to better control the AW properties in the Beaufort Gyre over time, this value has been increased to 2.10^4 N/m2 from January 1st 1987 onward.  <br>
 
 ## NUMERICS & PHYSICS ACTIVATED
 Main evolution against the previous reference experiment CREG12.L75-REF09 are listed below:<br>
